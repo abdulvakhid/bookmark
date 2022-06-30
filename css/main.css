@@ -1,0 +1,415 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --main-font-family: "Rubik", "Arial", sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'),
+        url('../fonts/rubik-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v20-latin-500.woff2') format('woff2'),
+        url('../fonts/rubik-v20-latin-500.woff') format('woff');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    padding-top: 40px;
+}
+
+.site-header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.sitenav__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.sitenav__item {
+    margin-right: 48px;
+
+}
+
+
+
+.sitenav__item--active {
+    margin-right: 44px;
+}
+
+.sitenav__link {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #242A45;
+}
+
+.sitenav__link:hover {
+    color: #FA5959;
+
+}
+
+.sitenav__item--last {
+    margin-right: 0;
+}
+
+.site-nav__link--active {
+    padding: 12px 33px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    background-color: #FA5959;
+    -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.site-nav__link--active:hover {
+    color: #FA5959;
+    background-color: #FFFFFF;
+    border: 2px solid #FA5959;
+}
+
+.hero {
+    padding-top: 197px;
+    padding-bottom: 200px;
+}
+
+.hero {
+    background-image: url("../images/hero-img.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: calc(50% + 581px) calc(50% + 21px);
+}
+
+
+
+
+
+.hero-box {
+    width: 550px;
+    /* display: flex;
+flex-direction: column;
+justify-content: center; */
+}
+
+.hero-box__topic {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: #242A45;
+}
+
+
+.hero-box__text {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #242A45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.btn__list-active {
+    margin-right: 16px;
+    padding: 10px 24px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    background-color: #5267DF;
+    -webkit-box-shadow: 0px 8px 8px -4px #495dcf33;
+    box-shadow: 0px 8px 8px -4px #495dcf33;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.btn__list-active:hover {
+    color: #5267DF;
+    background: #FFFFFF;
+    border: 2px solid #5267DF;
+}
+
+
+.btn__list {
+    padding: 10px 24px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #242A45;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    background-color: #F7F7F7;
+    -webkit-box-shadow: 0px 8px 8px -4px #495dcf33;
+    box-shadow: 0px 8px 8px -4px #495dcf33;
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+}
+
+.btn__list:hover {
+    color: #242A45;
+    background: #FFFFFF;
+    border: 2px solid #5B6074;
+}
+
+
+.download-box {
+    padding-bottom: 150px;
+}
+
+
+.download-box__content {
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+
+.box-content__topic {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #242A45;
+}
+
+.box-content__text {
+    margin: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #242A45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+.download-box {
+    width: 950px;
+    margin: 0 auto;
+}
+
+
+.download-box__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.download__item {
+    width: 300px;
+    height: 371px;
+    margin-right: 34px;
+    padding: 181px 24px 24px 24px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    position: relative;
+
+}
+
+
+.download__item--middle {
+    margin-top: 40px;
+}
+
+.download__item--last {
+    margin-top: 80px;
+    margin-right: 0;
+}
+
+.download__item--top::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 89px;
+    background-image: url("../images/firefox.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 102px;
+    height: 100px;
+}
+
+.download__item--middle::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 89px;
+    background-image: url("../images/chrome.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 102px;
+    height: 100px;
+}
+
+.download__item--last::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 89px;
+    background-image: url("../images/opera.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 102px;
+    height: 100px;
+}
+
+
+
+.download__tittle {
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #242A45;
+}
+
+
+.download__desc {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #242A45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.download__line {
+    width: 250px;
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.download__liner {
+    margin-right: 13px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #495dcf33;
+}
+
+.download__link {
+    width: 250px;
+    padding: 10px 35px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    background-color: #5267DF;
+    -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.download__link:hover {
+    color: #5267DF;
+    background-color: #FFFFFF;
+    border: 2px solid #5267DF;
+}
